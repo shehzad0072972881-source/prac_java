@@ -1,0 +1,100 @@
+/* 
+
+h1,
+h3 {
+    color: #ffffff;
+    background-color: #124e66;
+    align-items: center;
+}
+h2 {
+        color: #ffffff;
+    background-color: #124e66;
+    text-align: center;
+}
+#headings {
+text-align: center;
+}
+body {
+    background: linear-gradient(130deg, #222e4d, #3a8994, rgb(212, 145, 156));
+}
+p {
+    color: white;
+}
+button {
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    background: linear-gradient(to right, rgb(69, 73, 119), rgb(82, 75, 75))
+}
+button a {
+  text-decoration: none;
+  color: white;
+}
+button:hover {
+  animation: color move 2s linear infinite;
+}
+#images {
+    width: 370px;
+    display: flex;
+    margin-top: 20px;
+}
+#allimages{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#pic123{
+    display: flex;
+    margin-left: 40px;
+    width: 100%;
+  border-radius: 8px;
+  background-color: transparent;
+}
+#pic456{
+    display: flex;
+    margin-left: 40px;
+    width: 100%;
+  border-radius: 8px;
+  background-color: transparent;
+}
+#images{
+      transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  
+  1. Main Background Color (Blue/Dark)
+  background-color: #0f172a; 
+  
+  /* 2. White Dots ka Pattern */
+  /* background-image: radial-gradient(rgba(255, 255, 255, 0.3) 1.5px, transparent 1.5px); */
+  
+  /* 3. Dots ke darmiyan ka Gap */
+  /* background-size: 20px 20px;
+} */
+   /* h1, h2, h3 {
+  background-color: rgba(255, 255, 255, 0.07); 
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  padding: 10px 20px;
+}  */
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-color: black;
+  margin-bottom: 5px;
+}
