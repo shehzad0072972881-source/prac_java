@@ -38,7 +38,9 @@
 
 // h2.innerText = h2.innerText + "from apna college student"
 
+
 //    practice question 2
+// new code
 
 let divs = document.querySelectorAll(".box");
 divs[0].innerText = "new unique value 1";
