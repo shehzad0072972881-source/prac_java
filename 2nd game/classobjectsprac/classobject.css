@@ -1,0 +1,32 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+#carContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.carCard {
+    width: 220px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#prodContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.carCards {
+    width: 220px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}

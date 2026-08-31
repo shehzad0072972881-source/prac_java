@@ -93,5 +93,87 @@
 //     console.log(currMode);
 // });
 
-//       GAME TIC TOC TOE
+//                                                        GAME TIC TOC TOE
+
+let buttons = document.querySelectorAll(".btn1");
+let button = document.querySelector("#resetbtn");
+let newGameBtn = document.querySelector("#newgamebtn");
+let msgcontainer = document.querySelector(".msgcontainer");
+let msg = document.querySelector("#msg");
+let resetBtn = document.querySelector("#resetbtn")
+
+let turnO = true;
+
+const winpatterns = [
+    [0, 1, 2],
+    [0, 3, 6],
+    [0, 4, 8],
+    [1, 4, 7],
+    [2, 5, 8],
+    [2, 4, 6],
+    [3, 4, 5],
+    [6, 7, 8]
+];
+
+const resetGame = () => {
+    turnO = true;
+    enablebuttons();
+    msgcontainer.classList.add("hide");
+};
+
+buttons.forEach((btn1) => {
+    btn1.addEventListener("click", () => {
+       console.log("btn was clicked");
+       if (turnO) {
+         btn1.innerText = "X";
+         btn1.style.color = "#32315c"
+         turnO = false;
+         
+       }else {
+        btn1.innerText = "O";
+        btn1.style.color = "#9e6b95"
+        turnO = true;
+       }
+       btn1.disabled = true;
+
+       checkWinner ();
+    })
+});
+
+const disablebuttons = () => {
+    for (let btn1 of buttons) {
+        btn1.disabled = true;
+    }
+};
+
+const enablebuttons = () => {
+    for (let btn1 of buttons) {
+        btn1.disabled = false;
+        btn1.innerText = "";
+    }
+}
+
+const showWinner = (winner) =>{
+    msg.innerText =  `👑 Congratulations! Winner is .  ${winner} 🏆`;
+    msgcontainer.classList.remove("hide");
+    disablebuttons();
+}
+
+const checkWinner = () => {
+    for (let pattern of winpatterns) {
+        let pos1Val = buttons[pattern[0]].innerText;
+           let pos2Val = buttons[pattern[1]].innerText;
+              let pos3Val = buttons[pattern[2]].innerText;
+
+              if(pos1Val != "" && pos2Val != "" && pos3Val != ""){
+                if(pos1Val === pos2Val && pos2Val === pos3Val) {
+                    console.log("winner", pos1Val);
+                    showWinner (pos1Val);
+                }
+              }
+    }
+} ;
+
+newGameBtn.addEventListener("click", resetGame);
+resetBtn.addEventListener("click", resetGame);
 

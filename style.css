@@ -100,7 +100,7 @@ body {
 
 
 body{
-  background-color: #548687;
+  background: linear-gradient(to right, #52a5a7, #309292, #31628a);
   text-align: center;
 }
 .container{
@@ -127,17 +127,45 @@ body{
   border: none;
   box-shadow: 0 0 1rem rgba(0,0,0,0.3);
   font-size: 8vmin;
+  background-color: rgb(248, 250, 252);
+  color: #586e6e;
 }
 
-#btn2 {
+#resetbtn {
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-radius: 1rem;
   border: none;
-  background: linear-gradient(to right, #263131, #24dfe2);
+  background: linear-gradient(to right, #263131, #356869);
   color: white;
 }
 
+nav{
+  background: linear-gradient(to right,#4f8585, #27a8be );
+  color: rgb(253, 251, 251);
+}
+
+#newgamebtn{
+   padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  border: none;
+  background: linear-gradient(to right, #263131, #356869);
+  color: white;
+}
+
+#msg {
+  color: aliceblue;
+  font-size: 5vmin;
+}
+
+.msgcontainer {
+  height: 120px;
+}
+
+.hide {
+  display: none;
+}
 
 /* .dark{
   background-color: black;
